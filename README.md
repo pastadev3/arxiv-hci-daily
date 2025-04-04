@@ -3,6 +3,10 @@
 このプロジェクトは、[arXiv](https://arxiv.org/) の Human-Computer Interaction（`cs.HC`）カテゴリから  
 **前日に投稿された論文のタイトルとURLを自動取得し、日本語訳付きでGmailに通知**するPythonスクリプトです。
 
+## 📬 HCI 論文通知サンプル
+
+![メール通知サンプル](images/mail.png)
+
 ## 🛠 主な機能
 
 - 直近24時間に投稿された論文だけを対象に抽出
