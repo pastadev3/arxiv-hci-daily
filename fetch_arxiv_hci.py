@@ -11,7 +11,7 @@ with open("config.yaml", "r") as f:
 
 # arXiv APIのURL（HCIカテゴリ）
 ARXIV_URL = (
-    f"http://export.arxiv.org/api/query?search_query=cat:cs.HC"
+    f"http://export.arxiv.org/api/query?search_query=cat:{config['category_code']}"
     f"&sortBy=submittedDate&sortOrder=descending"
     f"&max_results={config['max_results']}"
 )
@@ -28,7 +28,7 @@ yesterday_date_str = (now - timedelta(days=1)).strftime("%Y-%m-%d")
 translator = Translator(to_lang="ja")
 
 # メール内容構築
-subject = f"[arXiv HCI] {yesterday_date_str} に投稿された新着論文"
+subject = f"[arXiv {config['category_name']}] {yesterday_date_str} に投稿された新着論文"
 body_lines = []
 
 # 前日投稿の論文を収集

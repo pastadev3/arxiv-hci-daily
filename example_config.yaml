@@ -2,3 +2,5 @@ gmail_user: "your_email@gmail.com"
 gmail_app_password: "your_app_password"
 to_email: "your_email@gmail.com"
 max_results: 50
+category_code: "cs.HC"
+category_name: "HCI"
